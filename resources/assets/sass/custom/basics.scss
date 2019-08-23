@@ -1,0 +1,40 @@
+.order-canceled {
+  border-left: 4px solid #f39c12;
+}
+
+.order-filled {
+  border-left: 4px solid green;
+}
+
+.order-unfilled {
+  border-left: 4px solid red;
+}
+
+#order-calendar td {
+  border-right: 2px solid #f4f4f4;
+  border-top: none;
+}
+
+#order-calendar tr.bg-black-light td {
+  border-right: 2px solid  #dbdbdb;
+}
+
+.line-deleted {
+  background-color: #ff8e8e;
+  text-decoration: line-through;
+}
+
+.scrollabe tbody {
+  display:block;
+  height:50px;
+  overflow:auto;
+}
+
+.scrollabe thead, .scrollabe tbody tr {
+  display:table;
+  width:100%;
+  table-layout:fixed;
+}
+.scrollabe thead {
+  width: calc( 100% - 1em )
+}
