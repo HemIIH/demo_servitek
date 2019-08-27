@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class UsersTableSeeder extends Seeder
 {
@@ -15,6 +16,7 @@ class UsersTableSeeder extends Seeder
             'name'     => 'servite24',
             'email'    => 'servite@servite.de',
             'cc_email' => 'pmonfared@servite.de',
+            'password' => Hash::make('servite24'),
             'type'     => 'internal']);
         $u->roles()->attach(\App\Models\User\Role::find(1));
 
