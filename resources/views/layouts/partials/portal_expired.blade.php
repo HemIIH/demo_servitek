@@ -1,0 +1,1 @@
+{{trans('auth.YOUR_PORTAL_EXPIRED')}}

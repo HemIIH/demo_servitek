@@ -9,7 +9,7 @@ Route::auth();
 Route::get('/user/activation/{token}', 'Auth\AuthController@activate')->name('user.activate');
 Route::get('/logout', 'Auth\LoginController@logout');
 
-Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth.internal'], function () {
+Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['auth.internal', 'portal.validate']], function () {
 
     Route::get('/dashboard', 'DashboardController@index');
 

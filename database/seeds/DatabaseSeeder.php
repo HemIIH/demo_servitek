@@ -28,5 +28,6 @@ class DatabaseSeeder extends Seeder
         $this->call(TextBlocksSeeder::class);
         $this->call(SalaryTableSeeder::class);
         $this->call(LegalTextsTableSeeder::class);
+        $this->call(PortalSettingsTableSeeder::class);
     }
 }

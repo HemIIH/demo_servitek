@@ -77,6 +77,31 @@ class LoginController extends Controller
 
         $this->clearLoginAttempts($request);
 
+        $postData = [
+                    'action' => 'user.login',
+                    'user' => $this->guard()->user(),
+                    'domain' => config('app.domain'),
+                    'timestamp' => date('Y-m-d H:i:s'),
+                    'login_user_id' => $this->guard()->user()->id,
+                ];
+        $postJson = json_encode($postData);
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => config('app.API')."user.login",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_POSTFIELDS => $postJson,
+            CURLOPT_HTTPHEADER => array(
+                "cache-control: no-cache",
+                "content-type: application/json"
+            ),
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
+        
+
         return $this->authenticated($request, $this->guard()->user())
             ?: redirect()->to($this->redirectTo[$this->guard()->user()->type]);
     }

@@ -314,3 +314,10 @@ Route::group(['namespace' => 'Employee\Api', 'prefix' => 'e'/*, 'middleware' => 
     Route::post('message',                       'MessageController@send');
 
 });
+
+
+Route::group(['namespace' => 'Api'], function () {
+    //Route::get('/getusers','PortalController@getusers');
+    Route::get('/getusers','PortalController@getuser');
+    
+});

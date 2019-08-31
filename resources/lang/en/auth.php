@@ -37,5 +37,6 @@ return [
     'Passwort vergessen' => 'Forgot password',
     'E-Mail anfordern' => 'Request E-Mail',
     'Passwort forget' => 'Forgot password',
+    'YOUR_PORTAL_EXPIRED' => 'Your portal is expired, Please contact DispoMaster Admin.',
     
 ];
