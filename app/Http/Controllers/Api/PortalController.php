@@ -6,6 +6,7 @@ use App\Http\Requests\User\UserRequest;
 use App\Models\User\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Http\Request;
 
 class PortalController extends Controller
 {
