@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Requests\User\UserRequest;
 use App\Models\User\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 
 class PortalController extends Controller
 {
@@ -21,5 +22,20 @@ class PortalController extends Controller
             $usersList[] = array('id' => $user->id, 'name' => $user->name,'email' => $user->email, 'type' => $user->type);
         }
         return response()->json(['users' => $usersList]);
+    }
+
+    public function createUser(Request $request){
+        $email = $request->get('email');
+        $name = $request->get('name');
+        $password = $request->get('password');
+        User::create([
+            'name'           => $name,
+            'email'          => $email,
+            'password'       => Hash::make($password),
+            'active'         => 1,
+            'remember_token' => str_random(10),
+            'created_by'     => 1,
+            'type'           => 'internal'
+        ])
     }
 }

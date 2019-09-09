@@ -319,5 +319,5 @@ Route::group(['namespace' => 'Employee\Api', 'prefix' => 'e'/*, 'middleware' => 
 Route::group(['namespace' => 'Api'], function () {
     //Route::get('/getusers','PortalController@getusers');
     Route::get('/getusers','PortalController@getuser');
-    
+    Route::post('/createuser','PortalController@createUser');
 });
