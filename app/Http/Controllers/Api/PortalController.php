@@ -37,6 +37,6 @@ class PortalController extends Controller
             'remember_token' => str_random(10),
             'created_by'     => 1,
             'type'           => 'internal'
-        ])
+        ]);
     }
 }
