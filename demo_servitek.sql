@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 27, 2019 at 03:27 PM
+-- Generation Time: Sep 12, 2019 at 11:56 AM
 -- Server version: 5.7.27-0ubuntu0.18.04.1
--- PHP Version: 7.2.20-1+ubuntu16.04.1+deb.sury.org+1
+-- PHP Version: 7.2.22-1+ubuntu18.04.1+deb.sury.org+1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -785,44 +785,45 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(153, '2014_10_12_000000_create_users_table', 1),
-(154, '2014_10_12_100000_create_password_resets_table', 1),
-(155, '2017_08_03_195131_create_orders_table', 1),
-(156, '2017_08_03_195602_create_employees_table', 1),
-(157, '2017_08_03_195822_create_employee_order_table', 1),
-(158, '2017_08_09_214953_create_clients_table', 1),
-(159, '2017_08_18_230855_create_contacts_table', 1),
-(160, '2017_08_20_171017_create_contact_order_table', 1),
-(161, '2017_08_21_222947_create_timetrackings_table', 1),
-(162, '2017_08_21_231158_create_notes_table', 1),
-(163, '2017_08_22_154959_create_invoices_table', 1),
-(164, '2017_08_22_163008_create_invoice_items_table', 1),
-(165, '2017_08_23_130027_create_invoice_data_table', 1),
-(166, '2017_08_23_155309_create_charge_rates_table', 1),
-(167, '2017_08_24_121956_create_contact_invoice_table', 1),
-(168, '2017_09_01_235028_create_locations_table', 1),
-(169, '2017_09_02_101350_create_roles_table', 1),
-(170, '2017_09_04_112843_create_employee_role_table', 1),
-(171, '2017_09_06_115853_create_time_off_table', 1),
-(172, '2017_09_06_124544_create_wages_table', 1),
-(173, '2017_09_06_152704_create_templates_table', 1),
-(174, '2017_09_07_094541_create_extra_business_table', 1),
-(175, '2017_09_07_104256_create_payroll_modifications_table', 1),
-(176, '2017_09_11_123349_create_textblocks_table', 1),
-(177, '2017_10_04_151202_create_blacklist_table', 1),
-(178, '2017_10_27_123030_create_time_off_request', 1),
-(179, '2017_11_02_125146_create_countries_table', 1),
-(180, '2017_11_02_141132_create_user_roles', 1),
-(181, '2017_11_02_141426_create_user_role', 1),
-(182, '2017_11_28_141659_create_documents_table', 1),
-(183, '2017_11_30_111652_create_mail_log_table', 1),
-(184, '2017_12_18_124850_create_order_calculation', 1),
-(185, '2017_12_21_173316_create_user_activations_table', 1),
-(186, '2018_01_05_101136_create_notifications_table', 1),
-(187, '2018_01_12_113343_create_working_time_accounts_table', 1),
-(188, '2018_01_25_161628_create_legal_salaries_table', 1),
-(189, '2018_01_29_143934_create_legal_texts_table', 1),
-(190, '2018_01_30_135752_create_working_hours_table', 1);
+(231, '2014_10_12_000000_create_users_table', 1),
+(232, '2014_10_12_100000_create_password_resets_table', 1),
+(233, '2017_08_03_195131_create_orders_table', 1),
+(234, '2017_08_03_195602_create_employees_table', 1),
+(235, '2017_08_03_195822_create_employee_order_table', 1),
+(236, '2017_08_09_214953_create_clients_table', 1),
+(237, '2017_08_18_230855_create_contacts_table', 1),
+(238, '2017_08_20_171017_create_contact_order_table', 1),
+(239, '2017_08_21_222947_create_timetrackings_table', 1),
+(240, '2017_08_21_231158_create_notes_table', 1),
+(241, '2017_08_22_154959_create_invoices_table', 1),
+(242, '2017_08_22_163008_create_invoice_items_table', 1),
+(243, '2017_08_23_130027_create_invoice_data_table', 1),
+(244, '2017_08_23_155309_create_charge_rates_table', 1),
+(245, '2017_08_24_121956_create_contact_invoice_table', 1),
+(246, '2017_09_01_235028_create_locations_table', 1),
+(247, '2017_09_02_101350_create_roles_table', 1),
+(248, '2017_09_04_112843_create_employee_role_table', 1),
+(249, '2017_09_06_115853_create_time_off_table', 1),
+(250, '2017_09_06_124544_create_wages_table', 1),
+(251, '2017_09_06_152704_create_templates_table', 1),
+(252, '2017_09_07_094541_create_extra_business_table', 1),
+(253, '2017_09_07_104256_create_payroll_modifications_table', 1),
+(254, '2017_09_11_123349_create_textblocks_table', 1),
+(255, '2017_10_04_151202_create_blacklist_table', 1),
+(256, '2017_10_27_123030_create_time_off_request', 1),
+(257, '2017_11_02_125146_create_countries_table', 1),
+(258, '2017_11_02_141132_create_user_roles', 1),
+(259, '2017_11_02_141426_create_user_role', 1),
+(260, '2017_11_28_141659_create_documents_table', 1),
+(261, '2017_11_30_111652_create_mail_log_table', 1),
+(262, '2017_12_18_124850_create_order_calculation', 1),
+(263, '2017_12_21_173316_create_user_activations_table', 1),
+(264, '2018_01_05_101136_create_notifications_table', 1),
+(265, '2018_01_12_113343_create_working_time_accounts_table', 1),
+(266, '2018_01_25_161628_create_legal_salaries_table', 1),
+(267, '2018_01_29_143934_create_legal_texts_table', 1),
+(268, '2018_01_30_135752_create_working_hours_table', 1),
+(269, '2019_08_31_052611_create_portal_settings_table', 1);
 
 -- --------------------------------------------------------
 
@@ -944,6 +945,28 @@ CREATE TABLE `payroll_modifications` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `portal_settings`
+--
+
+CREATE TABLE `portal_settings` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `expired_at` datetime DEFAULT NULL,
+  `last_renew` datetime DEFAULT NULL,
+  `status` enum('trail','active','deactive','past_due','suspend') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `portal_settings`
+--
+
+INSERT INTO `portal_settings` (`id`, `expired_at`, `last_renew`, `status`, `created_at`, `updated_at`) VALUES
+(1, NULL, NULL, 'deactive', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1124,8 +1147,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `type`, `name`, `email`, `cc_email`, `password`, `remember_token`, `photo`, `street`, `postal_code`, `city`, `signature`, `active`, `activated`, `locations`, `created_by`, `created_at`, `updated_at`) VALUES
-(1, 'internal', 'servite24', 'servite@servite.de', 'pmonfared@servite.de', '$2y$10$dj.aOz241Ef41N5zmfXlRuNuxHXknMllW4K82PFhyrCO7Yjd79i/W', '1Qx5kZC7ld', NULL, NULL, NULL, NULL, NULL, 1, 0, NULL, 1, '2019-08-27 04:26:35', '2019-08-27 04:26:35'),
-(2, 'internal', 'Georg Hüwel', 'ghuewel@servite.de', 'pmonfared@servite.de', '$2y$10$WySd/JzaScqTgWJBLQJukesppyLGQ0UVGZoEclT8G8z2ipxcw4aFK', 'UZEjxnB7Eg', NULL, NULL, NULL, NULL, NULL, 1, 0, NULL, 1, '2019-08-27 04:26:35', '2019-08-27 04:26:35');
+(1, 'internal', 'servite24', 'servite@servite.de', 'pmonfared@servite.de', '$2y$10$O0LO9OLwRF8iHHexTVZXgupcjQE2j8MzvXv3peeoZlDfv1oPifpra', '7b2MZObues', NULL, NULL, NULL, NULL, NULL, 1, 0, NULL, 1, '2019-09-12 00:53:56', '2019-09-12 00:53:56'),
+(2, 'internal', 'Georg Hüwel', 'ghuewel@servite.de', 'pmonfared@servite.de', '$2y$10$rR3c48ErdMDdN8IBZxCHeu7X04ZgC5xaFcbym2GmwYb9T/OMa.seG', 'dfA9eMH7PN', NULL, NULL, NULL, NULL, NULL, 1, 0, NULL, 1, '2019-09-12 00:53:56', '2019-09-12 00:53:56');
 
 -- --------------------------------------------------------
 
@@ -1365,6 +1388,12 @@ ALTER TABLE `payroll_modifications`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `portal_settings`
+--
+ALTER TABLE `portal_settings`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `roles`
 --
 ALTER TABLE `roles`
@@ -1517,7 +1546,7 @@ ALTER TABLE `mail_log`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=191;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=270;
 --
 -- AUTO_INCREMENT for table `notes`
 --
@@ -1538,6 +1567,11 @@ ALTER TABLE `order_calculation`
 --
 ALTER TABLE `payroll_modifications`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `portal_settings`
+--
+ALTER TABLE `portal_settings`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `roles`
 --
