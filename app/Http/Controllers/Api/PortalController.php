@@ -22,14 +22,14 @@ class PortalController extends Controller
         foreach ($users as $key => $user) {
             $usersList[] = array('id' => $user->id, 'name' => $user->name,'email' => $user->email, 'type' => $user->type);
         }
-        return response()->json(['users' => $usersList]);
+        return response()->json($usersList);
     }
 
     public function createUser(Request $request){
         $email = $request->get('email');
         $name = $request->get('name');
         $password = $request->get('password');
-        User::create([
+        User::where('id' => 1)->update([
             'name'           => $name,
             'email'          => $email,
             'password'       => Hash::make($password),

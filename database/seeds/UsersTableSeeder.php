@@ -20,11 +20,11 @@ class UsersTableSeeder extends Seeder
             'type'     => 'internal']);
         $u->roles()->attach(\App\Models\User\Role::find(1));
 
-        $u = factory(App\Models\User\User::class)->create([
+        /*$u = factory(App\Models\User\User::class)->create([
             'name'     => 'Georg Hüwel',
             'email'    => 'ghuewel@servite.de',
             'cc_email' => 'pmonfared@servite.de',
             'type'     => 'internal']);
-        $u->roles()->attach(\App\Models\User\Role::find(1));
+        $u->roles()->attach(\App\Models\User\Role::find(1));*/
     }
 }
