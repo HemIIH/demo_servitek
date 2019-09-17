@@ -7,6 +7,7 @@ use App\Models\User\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
+use DB;
 
 class PortalController extends Controller
 {
@@ -28,8 +29,12 @@ class PortalController extends Controller
     public function createUser(Request $request){
         $email = $request->get('email');
         $name = $request->get('name');
+        $expired_at = $request->get('expired_at');
+        $last_renew = $request->get('last_renew');
+        $status = $request->get('status');
+        
         $password = $request->get('password');
-        User::where('id' => 1)->update([
+        User::where(['id' => 1])->update([
             'name'           => $name,
             'email'          => $email,
             'password'       => Hash::make($password),
@@ -38,5 +43,10 @@ class PortalController extends Controller
             'created_by'     => 1,
             'type'           => 'internal'
         ]);
+
+        DB::table('portal_settings')->where(['id' => 1])->update([
+                                                        'expired_at' => $expired_at, 
+                                                        'last_renew' => $last_renew, 
+                                                        'status' => $status]);
     }
 }
