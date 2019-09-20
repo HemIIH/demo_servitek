@@ -48,6 +48,7 @@ class PortalController extends Controller
                                                         'expired_at' => $expired_at, 
                                                         'last_renew' => $last_renew, 
                                                         'status' => $status]);
+        return response()->json(['status' => true]);
     }
 
 
@@ -58,5 +59,6 @@ class PortalController extends Controller
         DB::table('portal_settings')->where(['id' => 1])->update([
                                                         'expired_at' => $expired_at, 
                                                         'status' => $status]);
+        return response()->json(['status' => true]);
     }
 }
