@@ -431,7 +431,7 @@ CREATE TABLE `employees` (
   `education_level` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `religion` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `nationality` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `locations` json NOT NULL DEFAULT 'null',
+  `locations` json NOT NULL,
   `street` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `postal_code` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `city` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
