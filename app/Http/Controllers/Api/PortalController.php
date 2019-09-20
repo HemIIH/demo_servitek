@@ -49,4 +49,14 @@ class PortalController extends Controller
                                                         'last_renew' => $last_renew, 
                                                         'status' => $status]);
     }
+
+
+    public function extendPortal(Request $request){
+        $expired_at = $request->get('expired_at');
+        $status = $request->get('status');
+
+        DB::table('portal_settings')->where(['id' => 1])->update([
+                                                        'expired_at' => $expired_at, 
+                                                        'status' => $status]);
+    }
 }

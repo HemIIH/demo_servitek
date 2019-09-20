@@ -320,4 +320,6 @@ Route::group(['namespace' => 'Api'], function () {
     //Route::get('/getusers','PortalController@getusers');
     Route::get('/getusers','PortalController@getuser');
     Route::post('/createuser','PortalController@createUser');
+    Route::post('/extend-portal','PortalController@extendPortal');
+    
 });
