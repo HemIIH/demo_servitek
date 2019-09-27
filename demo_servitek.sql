@@ -957,6 +957,7 @@ CREATE TABLE `portal_settings` (
   `expired_at` datetime DEFAULT NULL,
   `last_renew` datetime DEFAULT NULL,
   `status` enum('trail','active','deactive','past_due','suspend') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_setup` tinyint(1) NOT NULL DEFAULT '0',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

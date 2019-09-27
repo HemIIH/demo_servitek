@@ -817,11 +817,12 @@ return [
     "Adresszusatz" => "Additional Address",
     "Postleitzahl" => "Post Code",
     "Seite" => "Page",
-
-
-
-
-
-
-
+    "LBL_Current_password" => "Current Password",
+    "LBL_Password" => "Password",
+    "LBL_Confirm_password" => "Confirm Password",
+    "LBL_update_password" =>  "Your password has been updated successfully",
+    "LBL_password_required" => "Please enter password",
+    "LBL_password_min_6" => "Password must be minimum 6 characters",
+    "LBL_confirm_password_required" => "Please enter confirm password",
+    "LBL_confirm_password_not_valid" => "Your entered password not confirmed",
 ];
