@@ -38,5 +38,8 @@ return [
     'E-Mail anfordern' =>'E-Mail anfordern',
     'Passwort forget' =>'Passwort forget',
     'YOUR_PORTAL_EXPIRED' => 'Ihr Portal ist abgelaufen. Bitte wenden Sie sich an den DispoMaster-Administrator.',
+    'YOUR_PORTAL_SUSPEND' => 'Ihr Portal ist gesperrt. Bitte wenden Sie sich an den DispoMaster-Administrator.',
+    'suspend' => 'aussetzen',
+    'trail' => 'abgelaufen',
 
 ];

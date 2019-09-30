@@ -16,8 +16,10 @@ class PortalValidate
      */
     public function handle($request, Closure $next)
     {
-        $portValidate = DB::table('portal_settings')->select('expired_at', 'status')->first();
-        if ((strtotime($portValidate->expired_at) <= strtotime(date('Y-m-d'))) || $portValidate->status == 'deactive') {
+        $portValidate = DB::table('portal_settings')->select('expired_at', 'status', 'is_setup')->first();
+        if($portValidate->is_setup === 0){
+            return response()->view('layouts.partials.password_setup');            
+        }elseif ((strtotime($portValidate->expired_at) <= strtotime(date('Y-m-d'))) || in_array($portValidate->status, ['deactive','suspend'])) {
 
             return response()->view('layouts.partials.portal_expired');
         }
