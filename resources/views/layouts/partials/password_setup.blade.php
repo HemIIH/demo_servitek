@@ -17,7 +17,7 @@
                 <div class="signup-content">
                     <form method="POST" id="password-setup" class="signup-form" action="{{route('setup-password')}}">
                         {{ csrf_field() }}
-                        <h2 class="form-title">{{trans('admin.LBL_SET_PASSWORD')}}</h2>
+                        <h2 class="form-title">{{trans('auth.LBL_SET_PASSWORD')}}</h2>
                         <div class="form-group ">
                             <label class="control-label text-right col-md-3">{{trans('admin.LBL_Password')}}</label>
                             <input type="password" name="password" id="password"  class="form-control" placeholder="">
