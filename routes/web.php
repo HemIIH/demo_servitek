@@ -189,8 +189,10 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['aut
         echo('window.i18n = ' . json_encode($strings) . ';');
         exit();
     })->name('assets.lang.admin');
+});
 
-
+Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['auth.internal']], function () {
+    Route::post('password-setup', 'SettingController@setuppassword')->name('setup-password');
 });
 
 Route::group(['namespace' => 'Client', 'prefix' => 'c', 'middleware' => 'auth.client'], function () {
@@ -244,7 +246,4 @@ Route::group(['namespace' => 'Employee', 'prefix' => 'e', 'middleware' => 'auth.
         echo('window.i18n = ' . json_encode($strings) . ';');
         exit();
     })->name('assets.lang.e');
-
 });
-
-
