@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>{{config('app.name.')}}</title>
     <link rel="stylesheet" href="{{asset('css/expired_page.css')}}">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script> 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script> 
@@ -17,10 +17,7 @@
                 <div class="signup-content">
                     <form method="POST" id="password-setup" class="signup-form" action="{{route('setup-password')}}">
                         {{ csrf_field() }}
-                        <h2 class="form-title">Password Setup</h2>
-                        <div class="contain_dummy">
-                        	<p>{{trans('auth.YOUR_PORTAL_EXPIRED')}}</p>
-                        </div>
+                        <h2 class="form-title">{{trans('admin.LBL_SET_PASSWORD')}}</h2>
                         <div class="form-group ">
                             <label class="control-label text-right col-md-3">{{trans('admin.LBL_Password')}}</label>
                             <input type="password" name="password" id="password"  class="form-control" placeholder="">
