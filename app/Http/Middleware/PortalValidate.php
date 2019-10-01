@@ -21,7 +21,7 @@ class PortalValidate
             return response()->view('layouts.partials.password_setup');            
         }elseif ((strtotime($portValidate->expired_at) <= strtotime(date('Y-m-d'))) || in_array($portValidate->status, ['deactive','suspend'])) {
 
-            return response()->view('layouts.partials.portal_expired');
+            return response()->view('layouts.partials.portal_expired', compact('portValidate'));
         }
 
         return $next($request);

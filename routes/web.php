@@ -195,7 +195,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['aut
     Route::post('password-setup', 'SettingController@setuppassword')->name('setup-password');
 });
 
-Route::group(['namespace' => 'Client', 'prefix' => 'c', 'middleware' => 'auth.client'], function () {
+Route::group(['namespace' => 'Client', 'prefix' => 'c', 'middleware' => ['auth.client', 'portal.validate']], function () {
 
         Route::get('dashboard',                     'ClientController@dashboard');
         Route::get('calendar',                      'ClientController@calendar');
@@ -209,7 +209,7 @@ Route::group(['namespace' => 'Client', 'prefix' => 'c', 'middleware' => 'auth.cl
 
 });
 
-Route::group(['namespace' => 'Employee', 'prefix' => 'e', 'middleware' => 'auth.employee'], function () {
+Route::group(['namespace' => 'Employee', 'prefix' => 'e', 'middleware' => ['auth.employee', 'portal.validate']], function () {
 
         Route::get('dashboard',                     'EmployeeController@dashboard');
         Route::get('calendar',                      'EmployeeController@calendar');
