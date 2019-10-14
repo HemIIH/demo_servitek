@@ -824,6 +824,6 @@ return [
     "LBL_password_required" => "Bitte Passwort eingeben",
     "LBL_password_min_6" => "Das Passwort muss aus mindestens 6 Zeichen bestehen",
     "LBL_confirm_password_required" => "Bitte geben Sie ein Passwort zur Bestätigung ein",
-    "LBL_confirm_password_not_valid" => "Ihr eingegebenes Passwort wurde nicht bestätigt",
+    "LBL_confirm_password_not_valid" => "Ihr eingegebenes Passwort stimmt nicht überein.",
     "Update" => "aktualisieren",
 ];

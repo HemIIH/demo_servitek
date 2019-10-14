@@ -824,6 +824,6 @@ return [
     "LBL_password_required" => "Please enter password",
     "LBL_password_min_6" => "Password must be minimum 6 characters",
     "LBL_confirm_password_required" => "Please enter confirm password",
-    "LBL_confirm_password_not_valid" => "Your entered password not confirmed",
+    "LBL_confirm_password_not_valid" => "Your entered password does not match.",
     "Update" => "update",
 ];
