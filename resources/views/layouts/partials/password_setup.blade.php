@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{config('app.name.')}}</title>
+    <title>{{config('app.name')}}</title>
     <link rel="stylesheet" href="{{asset('css/expired_page.css')}}">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script> 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script> 
@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="main">
-        <section class="signup">
+        <section class="signup setup_ps">
             <div class="container">
                 <div class="signup-content">
                     <form method="POST" id="password-setup" class="signup-form" action="{{route('setup-password')}}">

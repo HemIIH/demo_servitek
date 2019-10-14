@@ -53,9 +53,9 @@ h2 {line-height: 1.66;margin: 0;padding: 0;font-weight: 900;color: #222;font-fam
 font-size: 24px;text-transform: uppercase;text-align: center;margin-bottom: 40px; }
 .clear {clear: both;}
 body {font-size: 14px;line-height: 1.8;color: #222;
-font-weight: 400;font-family: 'Montserrat';background-image: url("../assets/img/expired_page.jpg");
+font-weight: 400;font-family: 'Montserrat';background-image: url("../assets/img/expired_page.jpg");     background-attachment: fixed;
 background-repeat: no-repeat;background-size: cover;-moz-background-size: cover;-webkit-background-size: cover;
--o-background-size: cover;-ms-background-size: cover;background-position: center center;padding:250px 0 250px 0; }
+-o-background-size: cover;-ms-background-size: cover;background-position: center center; }
 .container {width: 660px;position: relative;margin: 0 auto; }
 .signup-content {background: #fff;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;-o-border-radius: 10px;-ms-border-radius: 10px;padding: 50px 85px; }
 .form-group {overflow: hidden;margin-bottom: 20px; }
@@ -65,9 +65,36 @@ padding: 17px 20px;box-sizing: border-box;font-size: 14px;font-weight: 700;color
 text-transform: uppercase;border: none;background-image: -moz-linear-gradient(to left, #74ebd5, #9face6);
 background-image: -ms-linear-gradient(to left, #74ebd5, #9face6);background-image: -o-linear-gradient(to left, #74ebd5, #9face6);
 background-image: -webkit-linear-gradient(to left, #74ebd5, #9face6);background-image: linear-gradient(to left, #74ebd5, #9face6); }
-
 .contain_dummy p {font-size: 16px;color: #000;margin-bottom: 0;}
 .contain_dummy {margin-bottom: 50px;}
+
+
+/*11-10-2019- css start*/
+.setup_ps form#password-setup .form-group label {width: 155px;float: left; font-weight: 600;}
+.setup_ps form#password-setup .form-group input {width: 97%;height: 38px; padding: 0px 5px;}
+.setup_ps form#password-setup .form-group label#confirm_password-error, .setup_ps label#password-error {
+width: 100% !important;font-weight: 400 !important;font-size: 12px;     color: red;}
+
+section.signup.setup_ps .container {margin-top: auto;margin-bottom: auto;margin-left: auto;margin-right: auto;
+vertical-align: middle;justify-content: center;position: absolute;top: 0;bottom: 0;
+display: inline-table; display:table; left: 0;right: 0;}
+
+
+@media(max-width:1024px){
+.setup_ps .signup-content{padding: 25px 20px;}	
+section.signup.setup_ps .container{width:60%;}
+.setup_ps form#password-setup .form-group input {width: 94%;}
+}
+
+
+@media(max-width:767px){
+section.signup.setup_ps .container{width:95%;}
+}
+
+
+
+/*11-10-2019- css End*/
+
 
 
 
