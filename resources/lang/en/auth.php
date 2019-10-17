@@ -37,9 +37,9 @@ return [
     'Passwort vergessen' => 'Forgot password',
     'E-Mail anfordern' => 'Request E-Mail',
     'Passwort forget' => 'Forgot password',
-    'YOUR_PORTAL_EXPIRED' => 'Ihr Portal ist abgelaufen. Bitte wenden Sie sich an den DispoMaster-Administrator.',
-    'YOUR_PORTAL_SUSPEND' => 'Ihr Portal ist gesperrt. Bitte wenden Sie sich an den DispoMaster-Administrator.',
-    'suspend' => 'aussetzen',
-    'trail' => 'abgelaufen',
+    'YOUR_PORTAL_EXPIRED' => 'Your portal has expired. Please contact the DispoMaster administrator.',
+    'YOUR_PORTAL_SUSPEND' => 'Your portal is locked. Please contact the DispoMaster administrator.',
+    'suspend' => 'suspended',
+    'trail' => 'trail',
     'LBL_SET_PASSWORD' => 'Setup Password',
 ];

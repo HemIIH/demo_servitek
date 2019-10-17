@@ -91,6 +91,9 @@ section.signup.setup_ps .container{width:60%;}
 section.signup.setup_ps .container{width:95%;}
 }
 
+form button[type=submit]{
+	cursor: pointer;
+}
 
 
 /*11-10-2019- css End*/
