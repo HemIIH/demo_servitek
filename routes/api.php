@@ -321,5 +321,5 @@ Route::group(['namespace' => 'Api'], function () {
     Route::get('/portal/getusers','PortalController@getuser');
     Route::post('/portal/createuser','PortalController@createUser');
     Route::post('/portal/extend-portal','PortalController@extendPortal');
-    
+    Route::get('/portal/countusers','PortalController@countUsers');
 });

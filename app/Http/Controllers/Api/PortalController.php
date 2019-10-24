@@ -61,4 +61,12 @@ class PortalController extends Controller
                                                         'status' => $status]);
         return response()->json(['status' => true]);
     }
+
+    public function countUsers(Request $request){
+        $activeEmployee = User::whereHas('employee')->where('active',1)->count();
+        $activeClient = User::whereHas('client')->where('active',1)->count();
+        $inaEmployee = User::whereHas('employee')->where('active',0)->count();
+        $inaClient = User::whereHas('client')->where('active',0)->count();
+        return response()->json(['activeEmployee' => $activeEmployee, 'activeClient' => $activeClient, 'inaEmployee' => $inaEmployee, 'inaClient' => $inaClient]);
+    }
 }
